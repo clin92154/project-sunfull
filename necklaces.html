@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--這個網頁的基本資訊、初始設定-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="本公司商品全部以手機實品拍照!為您嚴格挑選全新、庫存新、極新等！優質國際珠寶名品-商品來自歐美日百貨專櫃與專賣店！絕無來路不明之商品！請安心選購！由於商品種類繁多，無全數PO在網站上！可以來店鑑賞或為您代尋，由國外直接替您購回!三福堂國際珠寶名品～提供質優價美之商品，並為您獻上最真誠地祝福！祝福您！天天開心！事事順心！">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap" rel="stylesheet">
+
+    <!--style-->
+    <link rel="stylesheet" href="../../style/style.css">
+    <title>三福堂國際珠寶精品 | Sunfull</title>
+</head>
+
+<body>
+
+    <style>
+        .navbar-toggle {
+            border: none;
+            background: transparent !important;
+        }
+
+        .navbar-toggle:hover {
+            background: transparent !important;
+        }
+
+        .navbar-toggle .icon-bar {
+            width: 22px;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+
+        /* ANIMATED X */
+
+        .navbar-toggle.x .icon-bar:nth-of-type(1) {
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform-origin: 10% 10%;
+            -ms-transform-origin: 10% 10%;
+            transform-origin: 10% 10%;
+        }
+
+        .navbar-toggle.x .icon-bar:nth-of-type(2) {
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        .navbar-toggle.x .icon-bar:nth-of-type(3) {
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 10% 90%;
+            -ms-transform-origin: 10% 90%;
+            transform-origin: 10% 90%;
+        }
+
+        /* ANIMATED X COLLAPSED */
+
+        .navbar-toggle.x.collapsed .icon-bar:nth-of-type(1) {
+            -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+            transform: rotate(0);
+        }
+
+        .navbar-toggle.x.collapsed .icon-bar:nth-of-type(2) {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+        .navbar-toggle.x.collapsed .icon-bar:nth-of-type(3) {
+            -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+            transform: rotate(0);
+        }
+
+        /* END ANIMATED X */
+        /* FORCE NAVBAR-TOGGLE */
+
+        .navbar-header {
+            float: none;
+        }
+
+        .navbar-toggle {
+            display: block;
+        }
+
+        .navbar-collapse {
+            border-top: 1px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+
+        .navbar-nav {
+            float: none !important;
+            margin: 7.5px -15px;
+        }
+
+        .navbar-nav>li {
+            float: none;
+        }
+
+        .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .navbar-collapse.collapse.in {
+            display: block !important;
+        }
+
+        .navbar-brand {
+            font-size: 14px;
+        }
+    </style>
+    <!--header:logo + navbar-->
+    <header>
+        <div class="logo">
+            <img src="./icons/logo.png" alt="">
+            <h1>
+                <a href="./index.html
+            ">
+                    三福堂國際珠寶精品
+                </a>
+            </h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">首頁</a>
+                </li>
+                <li> <a href="./watches.html">產品介紹</a>
+                </li>
+                <li> <a href="./about_us.html">關於我們</a>
+                <li><a type="button" class="navbar-toggle larr collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse-larr">
+                        產品介紹
+                        <a />
+                </li>
+            </ul>
+        </nav>
+        <div class="collapse navbar-collapse" id="navbar-collapse-larr">
+            <ul class="nav navbar-nav">
+                <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">watches</a>
+                </li>
+                <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">rings</a>
+                </li>
+                <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">jade</a>
+                </li>
+                <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">corals</a>
+                </li>
+                <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">aquamarine</a></li>
+                <li data-toggle="collapse" data-target="#navbar-collapse.in"><a href="#top">necklaces</a></li>
+            </ul>
+        </div>
+
+        <!-- .navbar-collapse -->
+    </header>
+
+    <!--main-page-->
+    <main>
+        <section class="container">
+            <div class="categories">
+                <ul>
+                    <li>
+                        <h2>categories</h2>
+                    </li>
+                    <li><a href="./watches.html">watches</a></li>
+                    <li><a href="./rings.html">rings</a></li>
+                    <li><a href="./jade.html">jade</a></li>
+                    <li><a href="./corals.html">corals</a></li>
+                    <li><a href="./aquamarine.html">aquamarine</a></li>
+                    <li>
+                        <a class="active" href="./necklaces.html">necklaces</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" product ">
+                <div class=" box ">
+                    <a href=" " class=" product-image "><img src=" ../pictures/necklaces/necklace1.JPG" alt=" "></a>
+                    <div class=" product-name "><a href=" ./jade1.html ">necklaces1
+                        </a>
+                    </div>
+                </div>
+                <div class=" box ">
+                    <a href=" " class=" product-image "><img src=" ../pictures/necklaces/necklace2.JPG" alt=" "></a>
+                    <div class=" product-name "><a href=" ./jade2.html ">necklaces2
+                        </a>
+                    </div>
+                </div>
+                <div class=" box ">
+                    <a href=" " class=" product-image "><img src=" ../pictures/necklaces/necklace3.JPG" alt=" "></a>
+
+                    <div class=" product-name "><a href=" ./jade3.html ">necklaces3
+                        </a>
+                    </div>
+                </div>
+                <div class=" box ">
+                    <a href=" " class=" product-image "><img src=" ../pictures/necklaces/necklace4.JPG" alt=" "></a>
+
+                    <div class=" product-name "><a href=" ./jade3.html ">necklaces4
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <!--種類-->
+        <nav>
+            <ul>
+                <li>
+                    <a href=" # ">rings</a>
+                </li>
+                <li> <a href=" # ">rings</a>
+                </li>
+                <li> <a href=" # ">rings</a>
+                </li>
+                <li> <a href=" # ">rings</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--footer-inner-->
+        <section class=" footer-inner ">
+            <h5>copyright © 三福堂國際珠寶名品</h5>
+            <h5>公司地址: 高雄市新興區六合一路94-4號1樓</h5>
+            <h5>營業時間:13:00～21:00（每週六日公休）</h5>
+
+            <!--social media-->
+            <div>
+                <ul>
+                    <li>
+                        <a href=" https://www.facebook.com/sunfull.jewelry.shop ">
+                            <img src=" ../icons/facebook.png " alt=" facebook ">
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="
+                            https://linevoom.line.me/user/_dUVU6kIrVEoc9hElnZW3kcQY-t0aKZkqotpj0Uw?utm_medium=windows&utm_source=desktop&utm_campaign=OA_Profile ">
+                            <img src=" ../icons/line.png " alt=" LINE ">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" sunfull.jewelry.shop@gmail.com ">
+                            <img src=" ../icons/gmail.png " alt=" Email ">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
